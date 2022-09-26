@@ -3,7 +3,7 @@ import Head from "next/dist/shared/lib/head";
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen dark:bg-gray-800">
+    <div>
       <Head>
         <title>eric wiyanto</title>
       </Head>
@@ -17,7 +17,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-grow w-full items-center justify-center">
-            <p className="text-5xl font-semibold bg-clip-text dark:text-gray-200 ">Under construction</p>
+            <p className="text-5xl font-semibold dark:text-gray-200 ">Under construction</p>
           </div>
         </div>
       </main>
