@@ -1,26 +1,23 @@
-import { Player, Controls } from "@lottiefiles/react-lottie-player";
-import Head from "next/dist/shared/lib/head";
+/* eslint-disable @next/next/no-img-element */
+import Head from 'next/dist/shared/lib/head';
+import Image from 'next/image';
+import { useEffect, useRef } from 'react';
+import Links from '../components/Links';
+import Container from '../components/Container';
 
 export default function Home() {
+  const homeRef = useRef(null);
+  const projects = useRef(null);
+
   return (
-    <div>
-      <Head>
-        <title>eric wiyanto</title>
-      </Head>
-      <main>
-        <div className="flex flex-col gap-y-24 p-12">
-          <div className="w-full flex justify-center">
-            <div className="aspect-square bg-blue-400 rounded-full px-12 py-8 m-auto">
-              <Player autoplay loop src="https://assets1.lottiefiles.com/packages/lf20_mdiaxdju.json" style={{ height: "300px", width: "300px" }}>
-                <Controls visible={false} buttons={["play", "repeat", "frame", "debug"]} />
-              </Player>
-            </div>
-          </div>
-          <div className="flex flex-grow w-full items-center justify-center">
-            <p className="text-5xl font-semibold dark:text-gray-200 ">Under construction</p>
-          </div>
+    <>
+      <Container title="about - eric wiyanto">
+        <div ref={homeRef} className="flex aspect-square w-[400px] flex-col border-[1px] border-black py-8 px-12">
+          <h1 className="text-2xl">eric wiyanto</h1>
+          <p>hello there!</p>
+          <p>I am a Computer Science</p>
         </div>
-      </main>
-    </div>
+      </Container>
+    </>
   );
 }
