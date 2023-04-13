@@ -1,7 +1,8 @@
 function Links() {
   const links = [
-    { title: 'about', url: '/' },
-    { title: 'projects', url: '/projects' },
+    // { title: 'about', url: '/' },
+    // { title: 'projects', url: '/projects' },
+    // { title: 'reach me', url: '/contacts' },
   ];
 
   let activeLink = 'about';
