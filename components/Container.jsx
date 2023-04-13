@@ -7,10 +7,10 @@ class Container extends Component {
     return (
       <>
         <Head>
-          <title>{this.props.title ? this.props.title : 'eric wiyanto'}</title>
+          <title>{this.props.title ? `eric wiyanto - ${this.props.title}` : 'eric wiyanto'}</title>
         </Head>
         <main>
-          <div className="absolute top-1/4 left-1/2 -translate-y-1/4 -translate-x-1/2">
+          <div className="flex flex-col items-center gap-y-8 py-12">
             <Links />
             {this.props.children}
           </div>
