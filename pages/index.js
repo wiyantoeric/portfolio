@@ -38,6 +38,14 @@ export default function Home() {
             >
               linkedin
             </a>
+            <a
+              href="https://dribbble.com/wiyantoeric"
+              rel="noreferrer"
+              target="_blank"
+              className="w-fit cursor-pointer border-2 border-[#EA4C89] bg-[#EA4C89] px-2 py-1 text-white transition-colors duration-150 hover:bg-white hover:text-black"
+            >
+              dribbble
+            </a>
           </div>
         </div>
       </Container>
