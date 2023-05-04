@@ -19,7 +19,7 @@ export default function Home() {
           <div className="spacer h-12"></div>
           <p>I create frontend website and mobile apps, mainly with Flutter and React</p>
           <div className="spacer h-4"></div>
-          <p>and also, I love to make creative-works such as 2d illustration and 3d lowpoly model</p>
+          <p>In my spare time, I love to make creative-works such as 2d illustration and 3d lowpoly model</p>
           <div className="spacer h-16"></div>
           <div className="flex flex-col items-end gap-y-2 self-end">
             <a
