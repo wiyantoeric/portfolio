@@ -12,10 +12,10 @@ export default function Home() {
   return (
     <>
       <Container title="about">
-        <div ref={homeRef} className="flex min-h-[400px] w-[400px] flex-col border-2 border-black py-8 px-12">
+        <div ref={homeRef} className="flex min-h-[400px] w-[400px] flex-col sm:border-2 sm:border-black py-8 px-12">
           <h1 className="text-2xl">Eric Wiyanto</h1>
           <div className="spacer h-4"></div>
-          <p>hello there! I&apos;m a Computer Science undergraduate in Jakarta, Indonesia</p>
+          <p className='italic'>hello there! I&apos;m a Computer Science undergraduate in Jakarta, Indonesia</p>
           <div className="spacer h-12"></div>
           <p>I create frontend website and mobile apps, mainly with Flutter and React</p>
           <div className="spacer h-4"></div>
