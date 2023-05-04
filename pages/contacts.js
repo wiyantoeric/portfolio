@@ -3,9 +3,9 @@ import Container from '../components/Container';
 function links() {
   return (
     <Container title={'contacts'}>
-      <div className="flex min-h-[400px] w-[400px] flex-col border-[1px] border-black py-8 px-12">
+      <div className="flex w-[400px] flex-col border-[1px] border-black py-8 px-12">
         <h1 className="text-2xl">Reach me on</h1>
-        <div className="spacer h-8"></div>
+        <div className="spacer h-24"></div>
         <a
           href="https://linkedin.com/in/eric-wiyanto-aa640022a"
           rel="noreferrer"
