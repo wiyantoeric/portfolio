@@ -1,18 +1,14 @@
 import { useEffect, useRef } from 'react';
 import Container from '../components/Container';
 
-function InlineButton({ text = '' }) {
-  return <div className="inline cursor-pointer bg-gray-200 hover:bg-teal-300">{text}</div>;
-}
-
 export default function Home() {
   const homeRef = useRef(null);
   const projects = useRef(null);
 
   return (
     <>
-      <Container title="about">
-        <div ref={homeRef} className="flex min-h-[400px] w-[400px] flex-col sm:border-2 sm:border-black py-8 px-12">
+      <Container>
+        <div ref={homeRef} className="flex min-h-[400px] w-[400px] flex-col sm:border-2 bg-white sm:border-black py-8 px-12">
           <h1 className="text-2xl">Eric Wiyanto</h1>
           <div className="spacer h-4"></div>
           <p className='italic'>hello there! I&apos;m a Computer Science undergraduate in Jakarta, Indonesia</p>
