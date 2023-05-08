@@ -8,14 +8,14 @@ export default function Home() {
   return (
     <>
       <Container>
-        <div ref={homeRef} className="flex min-h-[400px] w-[400px] flex-col sm:border-2 bg-white sm:border-black py-8 px-12">
+        <div ref={homeRef} className="flex min-h-[400px] w-[400px] flex-col bg-white py-8 px-12 sm:border-2 sm:border-black">
           <h1 className="text-2xl">Eric Wiyanto</h1>
           <div className="spacer h-4"></div>
-          <p className='italic'>hello there! I&apos;m a Computer Science undergraduate in Jakarta, Indonesia</p>
+          <p className="italic">hello there! I&apos;m a Computer Science undergraduate in Jakarta, Indonesia</p>
           <div className="spacer h-12"></div>
           <p>I create frontend website and mobile apps, mainly with Flutter and React</p>
           <div className="spacer h-4"></div>
-          <p>In my spare time, I love to make creative-works such as 2d illustration and 3d lowpoly model</p>
+          <p>Aside of programming, I love to make creative-works such as 2d illustration and 3d lowpoly model</p>
           <div className="spacer h-16"></div>
           <div className="flex flex-col items-end gap-y-2 self-end">
             <a
