@@ -1,0 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+.link {
+  @apply hover:cursor-pointer leading-8 hover:decoration-2 duration-200 after:block after:border-[2px] after:border-black after:transition-transform after:duration-300 after:scale-x-0 after:hover:scale-x-100 outline-none;
+}

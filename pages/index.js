@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react';
 import Container from '../components/Container';
-import Links from '../components/Links';
 
 export default function Home() {
   const homeRef = useRef(null);
@@ -15,8 +14,8 @@ export default function Home() {
           <p className="italic">hello there! I&apos;m a Computer Science undergraduate in Jakarta, Indonesia</p>
           <div className="spacer h-12"></div>
           <p>I create frontend website and mobile apps, mainly with Flutter and React</p>
-          {/* <div className="spacer h-4"></div>
-          <p>Aside of programming, I love to make creative-works such as 2d illustration and 3d lowpoly model</p> */}
+          <div className="spacer h-4"></div>
+          <p>Aside of programming, I love to make creative-works such as 2d illustration and 3d lowpoly model</p>
           <div className="spacer h-16"></div>
           <div className="flex flex-col items-end gap-y-2 self-end">
             <a
