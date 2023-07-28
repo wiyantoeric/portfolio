@@ -14,7 +14,7 @@ export default function Home() {
           <div className="spacer h-4"></div>
           <p className="italic">Hello there! I&apos;m a Computer Science undergraduate at Jakarta, Indonesia</p>
           <div className="spacer h-4"></div>
-          <p>I create frontend website and mobile apps, mainly with Flutter and React</p>
+          <p>I create website and mobile app, mainly with Flutter and React (NextJs)</p>
           <div className="spacer h-16"></div>
           <div className="flex flex-col items-end gap-y-2 self-end">
             <a
