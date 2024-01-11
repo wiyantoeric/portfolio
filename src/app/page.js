@@ -45,7 +45,7 @@ export default function Home() {
             }
           </p>
         </div>
-        <div className="fle mt-auto flex w-full gap-4">
+        <div className="mt-auto flex w-full gap-4">
           <a href="https://github.com/wiyantoeric" target="_blank">
             <button className="delay-50 border-2 border-black bg-[#2D333B] p-2 transition-colors hover:bg-[#2d333beb]">
               <svg
