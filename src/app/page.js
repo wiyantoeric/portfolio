@@ -17,6 +17,7 @@ export default function Home() {
     //   setInitialCardHeight(window.getComputedStyle(cardRefCurrent).height);
     // }
 
+    // Card height animation
     gsap.fromTo(
       cardRefCurrent,
       {
@@ -26,6 +27,19 @@ export default function Home() {
         height: "438px",
         duration: 0.75,
         ease: "power2.out",
+      },
+    );
+
+    // Card opacity animation
+    gsap.fromTo(
+      cardRefCurrent,
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        duration: 1,
+        ease: "power2.inOut",
       },
     );
   }, []);
