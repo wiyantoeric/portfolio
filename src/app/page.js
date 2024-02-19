@@ -1,13 +1,9 @@
 "use client";
 
 import { popupAnimation } from "@/utils/animation";
-import AnimatedText from "@/components/AnimatedText";
-import BorderedContainer from "@/components/BorderedContainer";
 import gsap from "gsap";
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import ProfileCard from "@/components/ProfileCard";
-import WorksCard from "@/components/WorksCard";
 
 export default function Home() {
   const profileCardRef = useRef(null);
@@ -26,7 +22,6 @@ export default function Home() {
         <div ref={profileCardRef}>
           <ProfileCard />
         </div>
-        
       </div>
     </main>
   );
