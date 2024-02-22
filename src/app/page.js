@@ -2,18 +2,16 @@
 
 import { popupAnimation } from "@/utils/animation";
 import gsap from "gsap";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import ProfileCard from "@/components/ProfileCard";
 
 export default function Home() {
   const profileCardRef = useRef(null);
-  const cardRefBottom = useRef(null);
 
   useEffect(() => {
     const tl = gsap.timeline();
 
     tl.add(popupAnimation(profileCardRef.current));
-    tl.add(popupAnimation(cardRefBottom.current), "-=0.5");
   }, []);
 
   return (
