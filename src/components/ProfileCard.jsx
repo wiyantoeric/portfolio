@@ -5,10 +5,10 @@ import WorksLink from "./button/WorksLink";
 
 function ProfileCard() {
   return (
-    <div className="relative flex aspect-[7/8] w-96 flex-col border-2 border-black p-8">
-      <Link href={"/works"} className="">
+    <div className="relative flex aspect-[7/8] w-96 flex-col border-2 border-black bg-white p-8">
+      {/* <Link href={"/works"} className="">
         <WorksLink />
-      </Link>
+      </Link> */}
       <div className="flex flex-col justify-start">
         <p className="text-2xl">Eric Wiyanto</p>
         <p className="text-sm italic">application developer</p>
