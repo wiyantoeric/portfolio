@@ -1,4 +1,5 @@
 import gsap from "gsap";
+
 let popupAnimation = (componentRef) => {
   const tl = gsap.timeline();
 
@@ -24,10 +25,27 @@ let popupAnimation = (componentRef) => {
       duration: 1,
       ease: "power2.inOut",
     },
-    0
+    0,
   );
 
   return tl;
 };
 
-export { popupAnimation };
+const fadeInAnimation = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
+
+const staggerChildrenVariant = {
+  animate: { transition: { staggerChildren: 0.8 } },
+};
+
+export { popupAnimation, fadeInAnimation, staggerChildrenVariant };

@@ -18,20 +18,27 @@ function ProfileCard() {
           }
         </p>
       </div>
-      <div className="mt-auto flex w-full gap-2">
-        <a href="https://github.com/wiyantoeric" target="_blank">
-          <button className="border-2 border-black border-opacity-0 p-1 transition-all delay-75 hover:border-opacity-100">
-            <div className="bg-[#2D333B] p-2">
-              <GithubIcon />
-            </div>
-          </button>
+
+      <div className="mt-auto flex w-full gap-4">
+        <a
+          href="https://github.com/wiyantoeric"
+          target="_blank"
+          className="group relative"
+        >
+          <div className="absolute left-0 top-0 h-full w-full cursor-pointer border-2 border-black border-opacity-0 transition-transform duration-100 ease-in-out group-hover:scale-125 group-hover:border-opacity-100"></div>
+          <div className="bg-[#2D333B] p-2">
+            <GithubIcon />
+          </div>
         </a>
-        <a href="https://linkedin.com/in/ericwiyanto" target="_blank">
-          <button className="border-2 border-black border-opacity-0 p-1 transition-all delay-75 hover:border-opacity-100">
-            <div className="bg-[#0A66C2] p-2">
-              <LinkedinIcon />
-            </div>
-          </button>
+        <a
+          href="https://linkedin.com/in/ericwiyanto"
+          target="_blank"
+          className="group relative"
+        >
+          <div className="absolute left-0 top-0 h-full w-full cursor-pointer border-2 border-black border-opacity-0 transition-transform ease-in-out group-hover:scale-125 group-hover:border-opacity-100"></div>
+          <div className="bg-[#0A66C2] p-2">
+            <LinkedinIcon />
+          </div>
         </a>
       </div>
     </div>

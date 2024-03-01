@@ -1,11 +1,15 @@
 "use client";
 
-import { popupAnimation } from "@/utils/animation";
+import {
+  fadeInAnimation,
+  popupAnimation,
+  staggerChildrenVariant,
+} from "@/utils/animation";
 import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 import ProfileCard from "@/components/ProfileCard";
 import WorksCard from "@/components/WorksCard";
-// import { motion, useAnimate, useScroll, useTransform } from "framer-motion";
+import { motion, useAnimate } from "framer-motion";
 
 export default function Home() {
   const profileCardRef = useRef(null);
@@ -25,20 +29,31 @@ export default function Home() {
 
   useEffect(() => {
     const tl = gsap.timeline();
-    tl.add(popupAnimation(profileCardRef.current));
-    tl.add(popupAnimation(worksCardRef.current));
+    // tl.add(popupAnimation(profileCardRef.current));
+    // tl.add(popupAnimation(worksCardRef.current));
   });
 
   return (
     <main className="scroll-smooth">
-      <div className="my-40 flex w-screen flex-col items-center gap-y-10">
-        <div ref={profileCardRef}>
+      <motion.div
+        initial="initial"
+        animate="animate"
+        variants={staggerChildrenVariant}
+        className="my-40 flex w-screen flex-col items-center gap-y-10"
+      >
+        <motion.div
+          variants={fadeInAnimation}
+          ref={profileCardRef}
+        >
           <ProfileCard />
-        </div>
-        <div ref={worksCardRef}>
+        </motion.div>
+        <motion.div
+          variants={fadeInAnimation}
+          ref={worksCardRef}
+        >
           <WorksCard />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </main>
   );
 }
