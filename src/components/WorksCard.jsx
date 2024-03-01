@@ -59,8 +59,12 @@ function WorksCard() {
             <div className="flex flex-col gap-8 border-l-2 border-black pl-4">
               {article.projects.map((project) => (
                 <section key={project.title}>
-                  <p className="">{project.title}</p>
-                  <a className="underline" href={project.link} target="_blank">
+                  <p>{project.title}</p>
+                  <a
+                    className="underline"
+                    href={project.link}
+                    target="_blank"
+                  >
                     {project.alt}
                   </a>
                 </section>
