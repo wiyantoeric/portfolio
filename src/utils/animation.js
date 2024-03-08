@@ -45,7 +45,10 @@ const fadeInVariant = {
 };
 
 const staggerChildrenVariant = {
-  animate: { transition: { staggerChildren: 0.8 } },
+  initial: {},
+  animate: {
+    transition: { staggerChildren: 0.8 },
+  },
 };
 
-export { popupAnimation, fadeInVariant , staggerChildrenVariant };
+export { popupAnimation, fadeInVariant, staggerChildrenVariant };
