@@ -31,7 +31,7 @@ let popupAnimation = (componentRef) => {
   return tl;
 };
 
-const fadeInAnimation = {
+const fadeInVariant = {
   initial: {
     opacity: 0,
   },
@@ -45,7 +45,10 @@ const fadeInAnimation = {
 };
 
 const staggerChildrenVariant = {
-  animate: { transition: { staggerChildren: 0.8 } },
+  initial: {},
+  animate: {
+    transition: { staggerChildren: 0.8 },
+  },
 };
 
-export { popupAnimation, fadeInAnimation, staggerChildrenVariant };
+export { popupAnimation, fadeInVariant, staggerChildrenVariant };

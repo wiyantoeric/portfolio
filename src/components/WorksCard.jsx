@@ -61,11 +61,12 @@ function WorksCard() {
                 <section key={project.title}>
                   <p>{project.title}</p>
                   <a
-                    className="underline"
+                    className=" text-gray-500 transition-colors duration-150 ease-in-out hover:text-black"
                     href={project.link}
                     target="_blank"
                   >
                     {project.alt}
+                    <span>↗</span>
                   </a>
                 </section>
               ))}
