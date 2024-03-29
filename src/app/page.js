@@ -1,24 +1,15 @@
 "use client";
 
 import { fadeInVariant, staggerChildrenVariant } from "@/utils/animation";
-import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 import ProfileCard from "@/components/ProfileCard";
 import WorksCard from "@/components/WorksCard";
 import { motion, useAnimate } from "framer-motion";
-import Lenis from "@studio-freight/lenis";
+import initiateLenis from "@/utils/initiateLenis";
 
 export default function Home() {
   useEffect(() => {
-    const tl = gsap.timeline();
-    const lenis = new Lenis();
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
+    initiateLenis();
   });
 
   return (
