@@ -1,6 +1,16 @@
-import { useEffect } from "react";
+"use client";
 
 const articles = [
+  {
+    title: "Website development",
+    projects: [
+      {
+        title: "Fancy website",
+        link: "https://we-fancy-website.vercel.app",
+        alt: "we-fancy-website.vercel.app",
+      },
+    ],
+  },
   {
     title: "Flutter",
     projects: [
@@ -44,9 +54,30 @@ const articles = [
         link: "https://github.com/wiyantoeric/license-plate-recognition",
         alt: "github.com/wiyantoeric/license-plate-recognition",
       },
+      {
+        title: "Piano Optical Music Recognition",
+        link: "https://omr-wiyantoeric.streamlit.app",
+        alt: "omr-wiyantoeric.streamlit.app",
+      },
     ],
   },
 ];
+
+const maskVariant = {
+  initial: {
+    opacity: 0,
+    scale: 0,
+  },
+  animate: {
+    transition: {
+      ease: "backOut",
+    },
+  },
+  exit: {
+    opacity: 0,
+    scale: 0,
+  },
+};
 
 function WorksCard() {
   return (
@@ -61,7 +92,7 @@ function WorksCard() {
                 <section key={project.title}>
                   <p>{project.title}</p>
                   <a
-                    className=" text-gray-500 transition-colors duration-150 ease-in-out hover:text-black"
+                    className="text-gray-500 transition-colors duration-150 ease-in-out hover:text-black"
                     href={project.link}
                     target="_blank"
                   >
