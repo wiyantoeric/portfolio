@@ -1,11 +1,18 @@
 "use client";
 
-import { fadeInVariant, staggerChildrenVariant } from "@/utils/animation";
 import { useEffect, useRef, useState } from "react";
 import ProfileCard from "@/components/ProfileCard";
 import WorksCard from "@/components/WorksCard";
-import { motion, useAnimate } from "framer-motion";
+import { motion } from "framer-motion";
 import initiateLenis from "@/utils/initiateLenis";
+
+const containerVariant = {
+  animate: {
+    transition: {
+      staggerChildren: 1.5,
+    },
+  },
+};
 
 export default function Home() {
   useEffect(() => {
@@ -17,15 +24,11 @@ export default function Home() {
       <motion.div
         initial="initial"
         animate="animate"
-        variants={staggerChildrenVariant}
+        variants={containerVariant}
         className="my-40 flex w-screen flex-col items-center gap-y-10"
       >
-        <motion.div variants={fadeInVariant}>
-          <ProfileCard />
-        </motion.div>
-        <motion.div variants={fadeInVariant}>
-          <WorksCard />
-        </motion.div>
+        <ProfileCard />
+        <WorksCard />
       </motion.div>
     </main>
   );

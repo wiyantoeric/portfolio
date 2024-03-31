@@ -1,4 +1,6 @@
-"use client";
+import { motion } from "framer-motion";
+import AnimatedBorder from "./AnimatedBorder";
+import { fadeInVariant } from "@/utils/animation";
 
 const articles = [
   {
@@ -63,6 +65,14 @@ const articles = [
   },
 ];
 
+const containerVariant = {
+  animate: {
+    transition: {
+      staggerChildren: 0.3,
+    },
+  },
+};
+
 const maskVariant = {
   initial: {
     opacity: 0,
@@ -81,8 +91,15 @@ const maskVariant = {
 
 function WorksCard() {
   return (
-    <div className="flex w-96 flex-col border-2 border-black p-8">
-      <div className="flex flex-col justify-start gap-10">
+    <motion.div
+      variants={containerVariant}
+      className="relative flex aspect-[7/8] w-96 flex-col bg-white p-8"
+    >
+      <AnimatedBorder />
+      <motion.div
+        variants={fadeInVariant}
+        className="flex flex-col justify-start gap-10"
+      >
         <p>My works</p>
         {articles.map((article) => (
           <article className="space-y-2" key={article.title}>
@@ -104,8 +121,8 @@ function WorksCard() {
             </div>
           </article>
         ))}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 

@@ -1,12 +1,28 @@
-import Link from "next/link";
+import { fadeInVariant } from "@/utils/animation";
+import AnimatedBorder from "./AnimatedBorder";
 import GithubIcon from "./icon/GithubIcon";
 import LinkedinIcon from "./icon/LinkedinIcon";
-import WorksLink from "./button/WorksLink";
+import { motion } from "framer-motion";
+
+const containerVariant = {
+  animate: {
+    transition: {
+      staggerChildren: 0.3,
+    },
+  },
+};
 
 function ProfileCard() {
   return (
-    <div className="relative flex aspect-[7/8] w-96 flex-col border-2 border-black bg-white p-8">
-      <div className="flex flex-col justify-start">
+    <motion.div
+      variants={containerVariant}
+      className="relative flex aspect-[7/8] w-96 flex-col bg-white p-8"
+    >
+      <AnimatedBorder />
+      <motion.div
+        variants={fadeInVariant}
+        className="flex flex-col justify-start"
+      >
         <p className="text-2xl">Eric Wiyanto</p>
         <p className="text-sm italic">application developer</p>
         <p className="my-4 whitespace-pre-line">
@@ -14,9 +30,12 @@ function ProfileCard() {
             "Hey there!\n I'm currently on my Informatics degree. I do web and mobile programming with NextJs and Flutter"
           }
         </p>
-      </div>
+      </motion.div>
 
-      <div className="mt-auto flex w-full gap-4">
+      <motion.div
+        className="mt-auto flex w-full gap-4"
+        variants={fadeInVariant}
+      >
         <a
           href="https://github.com/wiyantoeric"
           target="_blank"
@@ -37,8 +56,8 @@ function ProfileCard() {
             <LinkedinIcon />
           </div>
         </a>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 

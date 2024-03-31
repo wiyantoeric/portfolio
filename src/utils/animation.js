@@ -1,36 +1,3 @@
-import gsap from "gsap";
-
-let popupAnimation = (componentRef) => {
-  const tl = gsap.timeline();
-
-  tl.fromTo(
-    componentRef,
-    {
-      height: 0,
-    },
-    {
-      height: "438px",
-      duration: 0.75,
-      ease: "power2.out",
-    },
-  );
-
-  tl.fromTo(
-    componentRef,
-    {
-      opacity: 0,
-    },
-    {
-      opacity: 1,
-      duration: 1,
-      ease: "power2.inOut",
-    },
-    0,
-  );
-
-  return tl;
-};
-
 const fadeInVariant = {
   initial: {
     opacity: 0,
@@ -44,11 +11,30 @@ const fadeInVariant = {
   },
 };
 
-const staggerChildrenVariant = {
-  initial: {},
+const borderHVariant = {
+  initial: {
+    scaleX: 0,
+  },
   animate: {
-    transition: { staggerChildren: 0.8 },
+    scaleX: 1,
+    transition: {
+      duration: 0.35,
+      ease: "easeInOut",
+    },
   },
 };
 
-export { popupAnimation, fadeInVariant, staggerChildrenVariant };
+const borderVVariant = {
+  initial: {
+    scaleY: 0,
+  },
+  animate: {
+    scaleY: 1,
+    transition: {
+      duration: 0.35,
+      ease: "easeInOut",
+    },
+  },
+};
+
+export { fadeInVariant, borderHVariant, borderVVariant };
