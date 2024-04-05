@@ -24,12 +24,14 @@ function ProfileCard() {
         className="flex flex-col justify-start"
       >
         <p className="text-2xl">Eric Wiyanto</p>
-        <p className="text-sm italic">application developer</p>
-        <p className="my-4 whitespace-pre-line">
-          {
-            "Hey there!\n I'm currently on my Informatics degree. I do web and mobile programming with NextJs and Flutter"
-          }
-        </p>
+        <p className="text-sm italic">app developer</p>
+        <div className="mt-6 space-y-4">
+          <p>
+            Hi there, I&apos;m Eric. I&apos;m an app developer with a formal
+            education in IT
+          </p>
+          <p>I do code and design creative website and beautiful mobile app</p>
+        </div>
       </motion.div>
 
       <motion.div
