@@ -1,9 +1,43 @@
-import { motion } from "framer-motion";
-import { borderHVariant, borderVVariant } from "@/utils/animation";
+import { motion, stagger } from "framer-motion";
+
+const borderHVariant = {
+  initial: {
+    scaleX: 0,
+  },
+  animate: {
+    scaleX: 1,
+    transition: {
+      duration: 0.55,
+      ease: "easeInOut",
+    },
+  },
+};
+
+const borderVVariant = {
+  initial: {
+    scaleY: 0,
+  },
+  animate: {
+    scaleY: 1,
+    transition: {
+      duration: 0.55,
+      ease: "easeInOut",
+    },
+  },
+};
+
+const delay = {
+  initial: {},
+  animate: {
+    transition: {
+      staggerChildren: 0.55,
+    },
+  },
+};
 
 function AnimatedBorder() {
   return (
-    <>
+    <motion.div variants={delay}>
       <motion.div
         variants={borderHVariant}
         className="absolute left-0 top-0 h-[1.5px] w-full origin-left bg-black"
@@ -20,7 +54,7 @@ function AnimatedBorder() {
         variants={borderVVariant}
         className="absolute bottom-0 left-0 h-full w-[1.5px] origin-bottom bg-black"
       ></motion.div>
-    </>
+    </motion.div>
   );
 }
 

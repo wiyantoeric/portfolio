@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const containerVariant = {
   animate: {
     transition: {
-      staggerChildren: 0.3,
+      staggerChildren: 0.55,
     },
   },
 };
