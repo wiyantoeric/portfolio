@@ -43,7 +43,7 @@ function ProfileCard() {
           target="_blank"
           className="group relative"
         >
-          <div className="absolute left-0 top-0 h-full w-full cursor-pointer border-2 border-black border-opacity-0 transition-transform duration-100 ease-in-out group-hover:scale-125 group-hover:border-opacity-100"></div>
+          <div className="absolute left-0 top-0 h-full w-full cursor-pointer border-2 border-black border-opacity-0 transition-transform duration-200 ease-out group-hover:scale-125 group-hover:border-opacity-100"></div>
           <div className="bg-[#2D333B] p-2">
             <GithubIcon />
           </div>
@@ -53,7 +53,7 @@ function ProfileCard() {
           target="_blank"
           className="group relative"
         >
-          <div className="absolute left-0 top-0 h-full w-full cursor-pointer border-2 border-black border-opacity-0 transition-transform ease-in-out group-hover:scale-125 group-hover:border-opacity-100"></div>
+          <div className="absolute left-0 top-0 h-full w-full cursor-pointer border-2 border-black border-opacity-0 transition-transform duration-200 ease-out  group-hover:scale-125 group-hover:border-opacity-100"></div>
           <div className="bg-[#0A66C2] p-2">
             <LinkedinIcon />
           </div>
