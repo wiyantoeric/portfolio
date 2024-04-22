@@ -23,8 +23,8 @@ function ProfileCard() {
         variants={fadeInVariant}
         className="flex flex-col justify-start"
       >
-        <p className="text-2xl">Eric Wiyanto</p>
-        <p className="text-sm italic">app developer</p>
+        <h1 className="text-2xl">Eric Wiyanto</h1>
+        <h2 className="text-sm italic">app developer</h2>
         <div className="mt-6 space-y-4">
           <p>
             Hi there, I&apos;m Eric. I&apos;m an app developer with a formal
@@ -42,7 +42,8 @@ function ProfileCard() {
           href="https://github.com/wiyantoeric"
           target="_blank"
           className="group relative"
-        >
+          title="Eric Wiyanto's GitHub Profile"
+          >
           <div className="absolute left-0 top-0 h-full w-full cursor-pointer border-2 border-black border-opacity-0 transition-transform duration-200 ease-out group-hover:scale-125 group-hover:border-opacity-100"></div>
           <div className="bg-[#2D333B] p-2">
             <GithubIcon />
@@ -52,6 +53,7 @@ function ProfileCard() {
           href="https://linkedin.com/in/ericwiyanto"
           target="_blank"
           className="group relative"
+          title="Eric Wiyanto's Linkedin Profile"
         >
           <div className="absolute left-0 top-0 h-full w-full cursor-pointer border-2 border-black border-opacity-0 transition-transform duration-200 ease-out  group-hover:scale-125 group-hover:border-opacity-100"></div>
           <div className="bg-[#0A66C2] p-2">
