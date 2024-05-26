@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("../../assets/fonts/inconsolata/Inconsolata-VariableFont_wdth,wght.ttf");
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url("../../assets/fonts/mulish/Mulish-VariableFont_wght.ttf");
+}

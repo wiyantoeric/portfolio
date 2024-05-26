@@ -1,9 +1,9 @@
-import { fadeInVariant } from "@/utils/animation";
 import AnimatedBorder from "./AnimatedBorder";
 import GithubIcon from "./icon/GithubIcon";
 import LinkedinIcon from "./icon/LinkedinIcon";
 import { delay, motion } from "framer-motion";
 import RevealText from "./RevealText";
+import { fadeInVariant } from "@/utils/animation";
 
 const containerVariant = {
   animate: {
@@ -33,13 +33,13 @@ const charAnimation = {
 
 const wordAnimation = {
   initial: { y: "100%" },
-  animate: ([index, delay]) => ({
+  animate: ([index, delay]: [number, number]) => ({
     y: "0%",
     transition: { delay: index * 0.1 + delay, ease: "circOut" },
   }),
 };
 
-const staggerChildren = (duration, delay) => {
+const staggerChildren = (duration: number, delay: number) => {
   return {
     initial: {},
     animate: {

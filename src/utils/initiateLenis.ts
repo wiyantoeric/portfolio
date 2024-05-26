@@ -4,7 +4,7 @@ import Lenis from "@studio-freight/lenis";
 function initiateLenis() {
   const lenis = new Lenis();
 
-  function raf(time) {
+  function raf(time: number) {
     lenis.raf(time);
     requestAnimationFrame(raf);
   }

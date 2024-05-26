@@ -9,7 +9,7 @@ import initiateLenis from "@/utils/initiateLenis";
 const containerVariant = {
   animate: {
     transition: {
-      staggerChildren: 2.2 + 3.5, // 2.2 (border animation duration) + 3.5 (text animation duration)
+      staggerChildren: 2.2 + 2.25, // 2.2 (border animation duration) + 2.25 (text animation duration)
     },
   },
 };

@@ -6,6 +6,12 @@ function RevealText({
   duration = 0.85,
   delay = 0,
   ease = "circOut",
+}: {
+  text: string;
+  className: string;
+  duration?: number;
+  delay?: number;
+  ease?: string;
 }) {
   return (
     <div className="overflow-hidden">
