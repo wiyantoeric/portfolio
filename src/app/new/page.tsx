@@ -173,7 +173,7 @@ function NewPage() {
     sticky = false,
   }: {
     direction: "right" | "left";
-    sticky: boolean;
+    sticky?: boolean;
   }) {
     return (
       <motion.div
