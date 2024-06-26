@@ -7,6 +7,7 @@ import initiateLenis from "@/utils/initiateLenis";
 import { motion, useScroll } from "framer-motion";
 import "../styles/new.scss";
 import RevealText from "@/components/RevealText";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const jobTitle = "/// creative web developer | app developer";
 const description =
@@ -28,33 +29,40 @@ function Home() {
   return (
     <div
       ref={containerRef}
-      className="absolute left-1/2 top-[10%] max-w-[400px] -translate-x-1/2 pb-40"
+      className="absolute left-1/2 top-[10%] max-w-[400px] -translate-x-1/2 pb-40 transition-colors duration-500 dark:text-white dark:text-opacity-95"
     >
       <Bar direction="right" />
 
       <div className="mt-4 flex flex-col gap-12">
         {/* Profile section */}
         <div className="flex flex-col gap-4">
-          <h1>
-            <RevealText
-              text="Eric"
-              delay={0.2}
-              duration={2}
-              className="font-mulish text-7xl font-bold text-black"
-            />
-            <RevealText
-              text="Wiyanto"
-              delay={0.65}
-              duration={2}
-              className="mb-2 font-mulish text-7xl font-bold text-black"
-            />
-            <RevealText
-              text={jobTitle}
-              delay={1.4}
-              duration={1.5}
-              className="font-inconsolata text-black opacity-80"
-            />
-          </h1>
+          {/* Encapsulate name section and [ThemeToggle] button */}
+          <div className="relative">
+            <h1>
+              <RevealText
+                text="Eric"
+                delay={0.2}
+                duration={2}
+                className="font-mulish text-7xl font-bold"
+              />
+              <RevealText
+                text="Wiyanto"
+                delay={0.65}
+                duration={2}
+                className="mb-2 font-mulish text-7xl font-bold"
+              />
+              <RevealText
+                text={jobTitle}
+                delay={1.4}
+                duration={1.5}
+                className="font-inconsolata opacity-80"
+              />
+            </h1>
+
+            <div className="absolute top-0 right-0 z-10">
+              <ThemeToggle />
+            </div>
+          </div>
 
           <h4 className="flex flex-auto flex-wrap">
             {description.split(" ").map((word, index) => {
@@ -125,7 +133,9 @@ function Home() {
             {articles.map((article) => {
               return (
                 <div className="space-y-2" key={article.title}>
-                  <p className="font-mulish uppercase">{article.title}</p>
+                  <p className="font-mulish font-bold uppercase">
+                    {article.title}
+                  </p>
                   {article.projects.map((project) => {
                     return (
                       <div key={project.title} className="">
@@ -179,7 +189,7 @@ function Home() {
         }}
       >
         <motion.div
-          className={`origin-${direction} h-1 w-full bg-black`}
+          className={`origin-${direction} h-1 w-full bg-black dark:bg-white`}
           style={{
             scaleX: scrollYProgress,
           }}

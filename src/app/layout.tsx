@@ -4,15 +4,14 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Eric Wiyanto",
-  description: "Eric Wiyanto portfolio website",
-};
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
+      <body className={`${inter.className} dark:bg-zinc-900`}>
         {children}
         <SpeedInsights />
       </body>
