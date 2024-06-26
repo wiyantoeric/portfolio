@@ -1,5 +1,3 @@
-"use client";
-
 import useTheme from "@/utils/useTheme";
 import { motion, useAnimate } from "framer-motion";
 import React from "react";

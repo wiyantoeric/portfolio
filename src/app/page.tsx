@@ -7,7 +7,9 @@ import initiateLenis from "@/utils/initiateLenis";
 import { motion, useScroll } from "framer-motion";
 import "../styles/new.scss";
 import RevealText from "@/components/RevealText";
-import ThemeToggle from "@/components/ThemeToggle";
+import dynamic from "next/dynamic";
+
+const ThemeToggle = dynamic(() => import("@/components/ThemeToggle"));
 
 const jobTitle = "/// creative web developer | app developer";
 const description =
@@ -59,7 +61,7 @@ function Home() {
               />
             </h1>
 
-            <div className="absolute top-0 right-0 z-10">
+            <div className="absolute right-0 top-0 z-10">
               <ThemeToggle />
             </div>
           </div>
