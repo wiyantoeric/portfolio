@@ -112,6 +112,14 @@ function Home() {
             >
               [<span className="group-hover:underline">github</span>]
             </a>
+            <a
+              className="animated-link group font-inconsolata"
+              href="mailto:wiyantoeric@gmail.com"
+              aria-label="Eric Wiyanto e-mail"
+              target="_blank"
+            >
+              [<span className="group-hover:underline">email</span>]
+            </a>
           </motion.div>
         </div>
 
