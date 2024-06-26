@@ -1,3 +1,5 @@
+"use client";
+
 import useTheme from "@/utils/useTheme";
 import { motion, useAnimate } from "framer-motion";
 import React from "react";
@@ -45,7 +47,7 @@ function ThemeToggle() {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 5.5, duration: .75, ease: "easeOut" },
+        transition: { delay: 5.5, duration: 0.75, ease: "easeOut" },
       }}
       onAnimationComplete={animateSplash}
       className="group relative cursor-pointer"
