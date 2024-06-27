@@ -5,7 +5,7 @@ import articleData from "../data.json";
 import { Article } from "@/type/article";
 import initiateLenis from "@/utils/initiateLenis";
 import { motion, useScroll } from "framer-motion";
-import "../styles/new.scss";
+import "../styles/home.scss";
 import RevealText from "@/components/RevealText";
 import dynamic from "next/dynamic";
 
@@ -75,6 +75,7 @@ function Home() {
                     duration={0.75}
                     delay={2.4 + index * 0.1}
                     className="font-mulish"
+                    key={index}
                   />
                   <span className="font-mulish">&nbsp;</span>
                 </>
