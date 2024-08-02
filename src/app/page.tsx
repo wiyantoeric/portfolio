@@ -11,9 +11,9 @@ import dynamic from "next/dynamic";
 
 const ThemeToggle = dynamic(() => import("@/components/ThemeToggle"));
 
-const jobTitle = "/// creative web developer | app developer";
+const jobTitle = "/// front end web | software developer";
 const description =
-  "Hi there, I'm Eric. I'm an app developer with a formal education in IT. I do code and design creative website and beautiful mobile app.";
+  "Hi there, I'm Eric. I'm an app developer with formal education in IT. I do code and design creative websites and beautiful mobile apps.";
 
 function Home() {
   const articles: Article[] = articleData as Article[];
@@ -143,7 +143,7 @@ function Home() {
           <div className="flex flex-col gap-12">
             {articles.map((article) => {
               return (
-                <div className="space-y-2" key={article.title}>
+                <div className="space-y-4" key={article.title}>
                   <p className="font-mulish font-bold uppercase">
                     {article.title}
                   </p>

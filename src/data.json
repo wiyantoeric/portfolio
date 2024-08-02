@@ -6,6 +6,11 @@
         "title": "Fancy website",
         "link": "https://we-fancy-website.vercel.app",
         "alt": "we-fancy-website.vercel.app"
+      },
+      {
+        "title": "Flippy Flashcard App [ON DEVELOPMENT]",
+        "link": "https://flippyapp.vercel.app",
+        "alt": "flippyapp.vercel.app"
       }
     ]
   },
