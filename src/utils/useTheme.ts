@@ -6,7 +6,7 @@ type Theme = "light" | "dark";
 const useTheme = (): [Theme, () => void] => {
   // Retrieve the stored theme from local storage or set default to 'light'
   const [theme, setTheme] = useState<Theme>(() => {
-    // Prevent error caused by late localStorage connection that
+    // Prevent error caused by late localStorage init
     if (typeof localStorage === "undefined") return "light";
 
     const savedTheme = localStorage.getItem("theme") as Theme | null;
