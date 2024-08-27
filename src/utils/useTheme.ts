@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 type Theme = "light" | "dark";
-const THEME = 'theme';
+const THEME = "theme";
 
 // Toggle between 'light' and 'dark' theme
 const useTheme = (): [Theme, () => void] => {
@@ -9,24 +9,20 @@ const useTheme = (): [Theme, () => void] => {
   const [theme, setTheme] = useState<Theme>(() => {
     // Prevent error caused by late localStorage init
     if (typeof localStorage === "undefined") return "light";
-
+    
     const savedTheme = localStorage.getItem(THEME) as Theme | null;
     return savedTheme ? savedTheme : "light";
   });
 
-  // Set theme state on localstorage load
+  // Effect to update the theme in local storage and apply the theme class to the document body
   useEffect(() => {
-    setTheme(localStorage.getItem(THEME) as Theme);
-  }, []);
+    localStorage.setItem(THEME, theme);
+    document.documentElement.className = theme;
+  }, [theme]);
 
   // Toggle between 'light' and 'dark' theme
   const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-
-    // Toggle theme in local storage and set theme class to document body
-    localStorage.setItem(THEME, newTheme);
-    document.documentElement.className = newTheme;
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
 
   return [theme, toggleTheme];
