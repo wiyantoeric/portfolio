@@ -4,12 +4,10 @@ import { useEffect, useRef, useState } from "react";
 import initiateLenis from "@/utils/initiateLenis";
 import { motion, useScroll } from "framer-motion";
 import "../styles/home.scss";
-import RevealText from "@/components/old/RevealText";
-import dynamic from "next/dynamic";
 import WorkContainer from "@/components/new/WorkContainer";
 import ProfileContainer from "@/components/new/ProfileContainer";
 
-const ThemeToggle = dynamic(() => import("@/components/new/ThemeToggle"));
+import React from "react";
 
 function Home() {
   const containerRef = useRef(null);
@@ -51,7 +49,7 @@ function Home() {
   }) {
     return (
       <motion.div
-        className={`h-fit w-full origin-${direction} ${
+        className={`z-50 h-fit w-full origin-${direction} ${
           sticky ? "sticky" : ""
         } top-0`}
         initial={{ scaleX: 0 }}
