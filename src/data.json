@@ -6,13 +6,23 @@
         "title": "Fancy website",
         "link": "https://we-fancy-website.vercel.app",
         "alt": "we-fancy-website.vercel.app",
-        "imageUrl" : "/images/test.jpg"
+        "imageUrl": "/images/fancyweb.png",
+        "description": "Creative website collections",
+        "tags": ["React.js", "Next.js", "Tailwind CSS", "Framer Motion"]
       },
       {
         "title": "Flippy Flashcard App [ON DEVELOPMENT]",
         "link": "https://flippyapp.vercel.app",
         "alt": "flippyapp.vercel.app",
-        "imageUrl" : "/images/test.jpg"
+        "imageUrl": "/images/flippy.png",
+        "description": "Flashcard learning web app",
+        "tags": [
+          "React.js",
+          "Next.js",
+          "Tailwind CSS",
+          "Framer Motion",
+          "Firebase"
+        ]
       }
     ]
   },
@@ -23,19 +33,25 @@
         "title": "Audio Store",
         "link": "https://github.com/wiyantoeric/audio_store",
         "alt": "github.com/wiyantoeric/audio_store",
-        "imageUrl" : "/images/test.jpg"
+        "imageUrl": "",
+        "description": "Audio ecommerce client mobile app",
+        "tags": ["Flutter"]
       },
       {
         "title": "Restaurant App",
         "link": "https://github.com/wiyantoeric/flutter-lab/tree/main/restaurant_app",
         "alt": "github.com/wiyantoeric/flutter-lab/tree/main/restaurant_app",
-        "imageUrl" : "/images/test.jpg"
+        "imageUrl": "",
+        "description": "Restaurant client mobile app",
+        "tags": ["Flutter"]
       },
       {
         "title": "Note App",
         "link": "https://github.com/wiyantoeric/flutter-note-app",
         "alt": "github.com/wiyantoeric/flutter-note-app",
-        "imageUrl" : "/images/test.jpg"
+        "imageUrl": "",
+        "description": "Note mobile app",
+        "tags": ["Flutter"]
       }
     ]
   },
@@ -46,13 +62,17 @@
         "title": "Covid Tracker",
         "link": "https://github.com/wiyantoeric/covid-tracker",
         "alt": "github.com/wiyantoeric/covid-tracker",
-        "imageUrl" : "/images/test.jpg"
+        "imageUrl": "/images/covtrack.jpg",
+        "description": "Android Covid tracker client app",
+        "tags": ["Android", "Open API"]
       },
       {
         "title": "Dota Hero App",
         "link": "https://github.com/wiyantoeric/kotdota",
         "alt": "github.com/wiyantoeric/kotdota",
-        "imageUrl" : "/images/test.jpg"
+        "imageUrl": "",
+        "description": "Android Dota hero team builder",
+        "tags": ["Android", "Firebase", "Open API"]
       }
     ]
   },
@@ -63,13 +83,31 @@
         "title": "License Plate Recognition",
         "link": "https://github.com/wiyantoeric/license-plate-recognition",
         "alt": "github.com/wiyantoeric/license-plate-recognition",
-        "imageUrl" : "/images/test.jpg"
+        "imageUrl": "",
+        "description": "Indonesia license plate recognition with Matriks Populasi Piksel and L1-Metric",
+        "tags": [
+          "AI",
+          "Pascal",
+          "Matriks Populasi Piksel",
+          "Computer Vision",
+          "L1-Metric"
+        ]
       },
       {
         "title": "Piano Optical Music Recognition",
         "link": "https://omr-wiyantoeric.streamlit.app",
         "alt": "omr-wiyantoeric.streamlit.app",
-        "imageUrl" : "/images/test.jpg"
+        "imageUrl": "/images/omr.png",
+        "description": "Piano score recognition with Matriks Populasi Piksel and L1-Metric",
+        "tags": [
+          "AI",
+          "Python",
+          "OpenCV",
+          "Computer Vision",
+          "Flood Filling",
+          "Matriks Populasi Piksel",
+          "L1-Metric"
+        ]
       }
     ]
   }
