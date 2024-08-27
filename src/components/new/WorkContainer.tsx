@@ -154,15 +154,6 @@ function ProjectContainer({
 }
 
 function ExpandIcon({ isOpen }: { isOpen: boolean }) {
-  const [theme, _] = useTheme();
-  const [color, setColor] = useState<string>("#18181b");
-
-  useEffect(() => {
-    console.log(theme);
-
-    setColor(theme === "light" ? "#18181b" : "#f8f8f8");
-  }, [theme]);
-
   return (
     <svg
       style={{
