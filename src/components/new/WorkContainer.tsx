@@ -134,7 +134,7 @@ function ProjectContainer({
                 </div>
               )}
               <div className="ml-6 flex-1 space-y-1">
-                <p className="relative font-inconsolata text-sm before:absolute before:-left-3 before:top-1/2 before:h-[5px] before:w-[5px] before:-translate-y-1/2 before:rounded-full before:bg-black before:content-[''] ">
+                <p className="relative font-inconsolata text-sm before:absolute before:-left-3 before:top-1/2 before:h-[5px] before:w-[5px] before:-translate-y-1/2 before:rounded-full before:bg-black before:content-[''] before:dark:bg-white">
                   {project.description}
                 </p>
                 <div className="flex flex-row flex-wrap gap-x-2 gap-y-1">
