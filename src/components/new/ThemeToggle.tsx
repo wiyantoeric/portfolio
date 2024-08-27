@@ -4,7 +4,7 @@ import React from "react";
 import BrightnessIcon from "../icon/BrightnessIcon";
 
 function ThemeToggle() {
-  const [theme, toggleTheme] = useTheme();
+  const [_, toggleTheme] = useTheme();
   const [splashRef, animate] = useAnimate();
 
   // Animate backdrop in timeline
@@ -62,7 +62,7 @@ function ThemeToggle() {
         onClick={onToggleClick}
         aria-label="Toggle theme"
       >
-        <BrightnessIcon light={theme === "light"} />
+        <BrightnessIcon />
       </div>
     </motion.div>
   );

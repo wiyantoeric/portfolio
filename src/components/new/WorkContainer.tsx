@@ -4,8 +4,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Article, Project } from "@/type/article";
 
 import articleData from "../../data.json";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
+import useTheme from "@/utils/useTheme";
 // import { useMousePosition } from "@/utils/useCursor";
 // import { useEffect, useState } from "react";
 
@@ -28,7 +29,7 @@ function WorkContainer() {
       animate={{
         opacity: 1,
         transition: {
-          delay: 0,
+          delay: 3,
           duration: 0.5,
           ease: "easeOut",
         },
@@ -153,23 +154,32 @@ function ProjectContainer({
 }
 
 function ExpandIcon({ isOpen }: { isOpen: boolean }) {
+  const [theme, _] = useTheme();
+  const [color, setColor] = useState<string>("#18181b");
+
+  useEffect(() => {
+    console.log(theme);
+
+    setColor(theme === "light" ? "#18181b" : "#f8f8f8");
+  }, [theme]);
+
   return (
     <svg
       style={{
         rotate: isOpen ? "180deg" : "0deg",
       }}
-      className="transition-all"
+      className="transition-all dark:text-white"
       width="20px"
       height="20px"
       strokeWidth="1.5"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      color="#000000"
+      color="currentColor"
     >
       <path
         d="M6 9L12 15L18 9"
-        stroke="#000000"
+        stroke="currentColor"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
