@@ -1,7 +1,7 @@
 import useTheme from "@/utils/useTheme";
 import { motion, useAnimate } from "framer-motion";
 import React from "react";
-import BrightnessIcon from "./icon/BrightnessIcon";
+import BrightnessIcon from "../icon/BrightnessIcon";
 
 function ThemeToggle() {
   const [theme, toggleTheme] = useTheme();
@@ -46,7 +46,7 @@ function ThemeToggle() {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 5.5, duration: 0.75, ease: "easeOut" },
+        transition: { delay: 4.5, duration: 0.75, ease: "easeOut" },
       }}
       onAnimationComplete={animateSplash}
       className="group relative cursor-pointer"

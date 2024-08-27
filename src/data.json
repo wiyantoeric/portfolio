@@ -5,12 +5,14 @@
       {
         "title": "Fancy website",
         "link": "https://we-fancy-website.vercel.app",
-        "alt": "we-fancy-website.vercel.app"
+        "alt": "we-fancy-website.vercel.app",
+        "imageUrl" : "/images/test.jpg"
       },
       {
         "title": "Flippy Flashcard App [ON DEVELOPMENT]",
         "link": "https://flippyapp.vercel.app",
-        "alt": "flippyapp.vercel.app"
+        "alt": "flippyapp.vercel.app",
+        "imageUrl" : "/images/test.jpg"
       }
     ]
   },
@@ -20,17 +22,20 @@
       {
         "title": "Audio Store",
         "link": "https://github.com/wiyantoeric/audio_store",
-        "alt": "github.com/wiyantoeric/audio_store"
+        "alt": "github.com/wiyantoeric/audio_store",
+        "imageUrl" : "/images/test.jpg"
       },
       {
         "title": "Restaurant App",
         "link": "https://github.com/wiyantoeric/flutter-lab/tree/main/restaurant_app",
-        "alt": "github.com/wiyantoeric/flutter-lab/tree/main/restaurant_app"
+        "alt": "github.com/wiyantoeric/flutter-lab/tree/main/restaurant_app",
+        "imageUrl" : "/images/test.jpg"
       },
       {
         "title": "Note App",
         "link": "https://github.com/wiyantoeric/flutter-note-app",
-        "alt": "github.com/wiyantoeric/flutter-note-app"
+        "alt": "github.com/wiyantoeric/flutter-note-app",
+        "imageUrl" : "/images/test.jpg"
       }
     ]
   },
@@ -40,12 +45,14 @@
       {
         "title": "Covid Tracker",
         "link": "https://github.com/wiyantoeric/covid-tracker",
-        "alt": "github.com/wiyantoeric/covid-tracker"
+        "alt": "github.com/wiyantoeric/covid-tracker",
+        "imageUrl" : "/images/test.jpg"
       },
       {
         "title": "Dota Hero App",
         "link": "https://github.com/wiyantoeric/kotdota",
-        "alt": "github.com/wiyantoeric/kotdota"
+        "alt": "github.com/wiyantoeric/kotdota",
+        "imageUrl" : "/images/test.jpg"
       }
     ]
   },
@@ -55,12 +62,14 @@
       {
         "title": "License Plate Recognition",
         "link": "https://github.com/wiyantoeric/license-plate-recognition",
-        "alt": "github.com/wiyantoeric/license-plate-recognition"
+        "alt": "github.com/wiyantoeric/license-plate-recognition",
+        "imageUrl" : "/images/test.jpg"
       },
       {
         "title": "Piano Optical Music Recognition",
         "link": "https://omr-wiyantoeric.streamlit.app",
-        "alt": "omr-wiyantoeric.streamlit.app"
+        "alt": "omr-wiyantoeric.streamlit.app",
+        "imageUrl" : "/images/test.jpg"
       }
     ]
   }

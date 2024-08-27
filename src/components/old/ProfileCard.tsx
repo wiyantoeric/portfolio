@@ -1,6 +1,6 @@
 import AnimatedBorder from "./AnimatedBorder";
-import GithubIcon from "./icon/GithubIcon";
-import LinkedinIcon from "./icon/LinkedinIcon";
+import GithubIcon from "../icon/GithubIcon";
+import LinkedinIcon from "../icon/LinkedinIcon";
 import { delay, motion } from "framer-motion";
 import RevealText from "./RevealText";
 import { fadeInVariant } from "@/utils/animation";

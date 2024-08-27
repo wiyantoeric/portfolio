@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import ProfileCard from "@/components/ProfileCard";
-import WorksCard from "@/components/WorksCard";
+import ProfileCard from "@/components/old/ProfileCard";
+import WorksCard from "@/components/old/WorksCard";
 import { motion } from "framer-motion";
 import initiateLenis from "@/utils/initiateLenis";
 
