@@ -17,6 +17,10 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  publisher: "Eric Wiyanto",
+  verification: {
+    google: "E9iEx7kR7zbduQcws8hzWWyw9en76CiyLs2WdK_8UbA",
+  },
 };
 
 export default function RootLayout({
