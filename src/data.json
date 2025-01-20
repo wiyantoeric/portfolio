@@ -1,5 +1,17 @@
 [
   {
+    "title": "Full Stack Developer",
+    "projects": [
+      {
+        "title": "Daya Bahtera Sumatera group",
+        "alt": "Daya Bahtera Sumatera group",
+        "link": "https://dbsgroupid.com",
+        "description": "Full time developer\nWorked on company internal application",
+        "tags": ["Laravel", "Tailwind CSS"]
+      }
+    ]
+  },
+  {
     "title": "Website development",
     "projects": [
       {

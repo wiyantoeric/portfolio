@@ -3,9 +3,9 @@ import RevealText from "../old/RevealText";
 import ThemeToggle from "./ThemeToggle";
 
 function ProfileContainer() {
-  const jobTitle = "/// front end web | software developer";
+  const jobTitle = "/// software engineer";
   const description =
-    "Hi there, I'm Eric. I'm an app developer with formal education in IT. I do code and design creative websites and beautiful mobile apps.";
+    "Hi there, I'm Eric. I'm a full stack developer with formal education in IT. I code application for websites, mobile, and other platforms. I also do creative websites and a bit of UI/X design";
 
   return (
     <div className="flex flex-col gap-4">

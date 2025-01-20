@@ -4,7 +4,7 @@
   //   transition: gap 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); // circ-out easing
   transition: gap 0.55s cubic-bezier(0.165, 0.84, 0.44, 1);
 
-  &:hover {
+  &:hover, &:focus {
     gap: 0.5rem;
   }
 }
