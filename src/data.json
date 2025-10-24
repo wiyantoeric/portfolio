@@ -6,8 +6,8 @@
         "title": "Daya Bahtera Sumatera group",
         "alt": "Daya Bahtera Sumatera group",
         "link": "https://dbsgroupid.com",
-        "description": "Full time developer\nWorked on company internal application",
-        "tags": ["Laravel", "Tailwind CSS"]
+        "description": "Working on company website applications\n- Product Order Approvals\n- HRIS\n- Data Warehouse\n- Company Profile",
+        "tags": ["Laravel", "Alpine.js", "Tailwind CSS"]
       }
     ]
   },
@@ -20,20 +20,35 @@
         "alt": "we-fancy-website.vercel.app",
         "imageUrl": "/images/fancyweb.png",
         "description": "Creative website collections",
-        "tags": ["React.js", "Next.js", "Tailwind CSS", "Framer Motion"]
+        "tags": ["Next.js", "Tailwind CSS", "Framer Motion"]
       },
       {
-        "title": "Flippy Flashcard App [ON DEVELOPMENT]",
+        "title": "Flippy Flashcard App",
         "link": "https://flippyapp.vercel.app",
         "alt": "flippyapp.vercel.app",
         "imageUrl": "/images/flippy.png",
         "description": "Flashcard learning web app",
         "tags": [
-          "React.js",
           "Next.js",
           "Tailwind CSS",
           "Framer Motion",
           "Firebase"
+        ]
+      },
+      {
+        "title": "Finv - Business & Market Insights",
+        "link": "https://finv.vercel.app",
+        "alt": "finv.vercel.app",
+        "imageUrl": "",
+        "description": "Business and market news",
+        "tags": [
+          "Next.js",
+          "Tailwind CSS",
+          "Motion",
+          "Supabase",
+          "Prisma",
+          "Zustand",
+          "API"
         ]
       }
     ]
